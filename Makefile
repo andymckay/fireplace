@@ -76,6 +76,9 @@ package_altdev:
 package_paymentsalt:
 	SERVER='paymentsalt' NAME='PaymentAlt' DOMAIN='payments-alt.allizom.org' \
     ORIGIN='app:\/\/packaged.payments-alt.allizom.org' make package
+packaged_mp_dev:
+	SERVER='mp-dev' NAME='MarketplaceDevLocal' DOMAIN='mp.dev' \
+	ORIGIN='app:\/\/packaged.mp.dev' make package
 
 
 serve_package:
@@ -133,6 +136,9 @@ log_dev:
 log_payments_alt:
 	SERVER='paymentsalt' NAME='PaymentsAlt' DOMAIN='payments-alt.allizom.org' \
 	ORIGIN='payments-alt.allizom.org' make log
+log_mp_dev:
+	SERVER='mp-dev' NAME='MarketplaceDevLocal' DOMAIN='mp.dev' \
+	ORIGIN='packaged.mp.dev' make log
 
 
 submit_log:
